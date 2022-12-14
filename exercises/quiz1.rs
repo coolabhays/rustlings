@@ -10,10 +10,22 @@
 // Write a function that calculates the price of an order of apples given
 // the quantity bought. No hints this time!
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(quantity: u32) -> u32 {
+    // this works
+    /* let mut total_price = 0;
+    if quantity > 40 {
+        // total_price += (40 * 2) + (quantity - 40);  // I think extra sometimes
+        total_price += quantity;
+    } else {
+        total_price += (quantity * 2);
+    }
+
+    total_price */
+
+    // ternary approach
+    if quantity > 40 { quantity} else { quantity * 2 }
+}
 
 // Don't modify this function!
 #[test]
