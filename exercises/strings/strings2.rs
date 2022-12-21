@@ -2,11 +2,10 @@
 // Make me compile without changing the function signature!
 // Execute `rustlings hint strings2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 fn main() {
     let word = String::from("green"); // Try not changing this line :)
-    if is_a_color_word(word) {
+    if is_a_color_word(&word) {  // &str parameter can take both slice and string as arg, you can
+                                 // also give "&word[..]"
         println!("That is a color word I know!");
     } else {
         println!("That is not a color word I know.");
